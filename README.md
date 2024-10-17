@@ -1,24 +1,7 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Hello World
+```ruby =
+1. Added "root 'welcome#index'" on config/routes.rb
+2. Enter "rails generate controller WelcomeController index --skip-routes --no-test-framework" on /usr/src/app which is the docker container
+    # This will generate welcome_controller.rb and index.html.erb
+3. Enter the "Hello world on index.html.erb"
+```
