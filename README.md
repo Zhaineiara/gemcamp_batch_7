@@ -62,3 +62,9 @@
 1. Post.find(1)
 2. Post.find(6)
 ```
+
+* Reading records from the database (find by column value)
+```ruby =
+1. Post.find_by(title: 'my first post')
+2. Post.find(6)
+```
