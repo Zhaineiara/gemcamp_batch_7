@@ -90,3 +90,11 @@
 3. Post.where(id: [3, 4]).update(content: 'Update multiple contents')
 4. Post.where(id: [3, 4]).update_all(content: 'Update multiple contents with update_all')
 ```
+
+* Deleting record (.update, save, where)
+```ruby =
+1. Post.last.destroy
+2. Post.where(id: 3).destroy
+3. posts = Post.where(id: [3, 4])
+   posts.destroy_all
+```
