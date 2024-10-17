@@ -80,3 +80,13 @@
 1. Post.order(created_at: :asc)
 2. Post.order(created_at: :desc)
 ```
+
+* Updating record (.update, save, where)
+```ruby =
+1. post.update(content: 'The first post is updated') 
+2. post = Post.second
+   post.content = 'The second post is updated'
+   post.save
+3. Post.where(id: [3, 4]).update(content: 'Update multiple contents')
+4. Post.where(id: [3, 4]).update_all(content: 'Update multiple contents with update_all')
+```
