@@ -50,3 +50,9 @@
 ```ruby =
 1. Post.all
 ```
+
+* Reading records from the database (first and last records)
+```ruby =
+1. Post.first
+2. Post.last
+```
