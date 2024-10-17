@@ -98,3 +98,8 @@
 3. posts = Post.where(id: [3, 4])
    posts.destroy_all
 ```
+
+* Using resources instead of setting up manually
+```ruby =
+1. Enter the "resources :posts" on config/routes
+```
