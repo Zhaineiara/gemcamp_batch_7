@@ -115,3 +115,20 @@
     # <%= post.content %>
     # <%end%>
 ```
+
+* Putting simple design to make it more organize
+```ruby =
+1. Get a design from bootstrap and transfer and ruby codes.
+2. These are the following designs that I've used to design the table
+    # 1. class="table" - to make a table
+    # 2. class="table-striped" - to make the table stripe in rows
+    # 3. class="table-primary" - to add color to the table, i always tried putting it in each rows that worked
+    # 4. class="border" - to put a border
+    # 5. class="border-secondary" - to add color to the border
+    # 6. class="mx-auto" - for margin left and right
+    # 7. class="my-5" - for margin top and bottom
+    # 8. style="width: 1200px; - setting up the width
+
+    # Not that required
+    # 1. scope="col" - improves the semantics of the table and enhances accessibility by clearly identifying column headers.
+```
