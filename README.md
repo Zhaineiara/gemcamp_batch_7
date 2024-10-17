@@ -23,3 +23,12 @@
     # app/helpers/posts_helper.rb,  app/views/posts/index.json.jbuilder, app/views/posts/show.json.jbuilder, app/views/posts/_post.json.jbuilder
 2. Enter "rails destroy scaffold Post"
 ```
+
+* Added model and controller for post
+```ruby =
+1. Enter "rails generate model Post"
+2. Enter "rails generate controller Posts"
+3. Identify the column datatype and title
+4. Enter "rails db:migrate"
+5. Enter "rails db:reset"
+```
