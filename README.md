@@ -45,3 +45,8 @@
    Post.create(title: 'My fifth post', content: 'My fifth post blog')
    Post.create(title: 'My sixth post', content: 'My sixth post blog')
 ```
+
+* Reading records from the database (all records)
+```ruby =
+1. Post.all
+```
