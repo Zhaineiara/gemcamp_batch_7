@@ -66,5 +66,11 @@
 * Reading records from the database (find by column value)
 ```ruby =
 1. Post.find_by(title: 'my first post')
-2. Post.find(6)
+2. Post.find_by(title: 'My sixth post')
+```
+
+* Reading records from the database (find by column value)
+```ruby =
+1. Post.where(title: 'my first post')
+2. Post.where(title: 'My sixth post')
 ```
