@@ -32,3 +32,16 @@
 4. Enter "rails db:migrate"
 5. Enter "rails db:reset"
 ```
+
+* Creates record for posts table
+```ruby =
+1. Post.create(title: 'My first post', content: 'My first post blog')
+2. post = Post.new                      
+   post.title = 'My second post'           
+   post.content = 'My second post blog'
+   post.save 
+3. Post.create(title: 'My third post', content: 'My third post blog')
+   Post.create(title: 'My fourth post', content: 'My fourth post blog')
+   Post.create(title: 'My fifth post', content: 'My fifth post blog')
+   Post.create(title: 'My sixth post', content: 'My sixth post blog')
+```
