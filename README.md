@@ -56,3 +56,9 @@
 1. Post.first
 2. Post.last
 ```
+
+* Reading records from the database (find by id)
+```ruby =
+1. Post.find(1)
+2. Post.find(6)
+```
