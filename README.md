@@ -103,3 +103,15 @@
 ```ruby =
 1. Enter the "resources :posts" on config/routes
 ```
+
+* Fetch and render all data from posts table
+```ruby =
+1. In routes, change the root. Put "root 'posts#index'"
+2. Add an instance method in post controller that will gather all the data.
+    # In here, I use the 'Post.all' which I tried running in rails c
+3. Render the data to posts/index.html.view (looping the data)
+    # <%@posts.each do |post|%>
+    # <%= post.title %>
+    # <%= post.content %>
+    # <%end%>
+```
