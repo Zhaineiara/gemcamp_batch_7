@@ -5,3 +5,20 @@
     # This will generate welcome_controller.rb and index.html.erb
 3. Enter the "Hello world on index.html.erb"
 ```
+
+* Active Record Basics
+```ruby =
+1. Enter "rails generate migration create_posts" on docker container
+    # This will generate a migration file that is use for database schema
+2. Check the migration file and identify the column datatype and title
+3. Enter "rails db:migrate"
+    # This will run all the migration files in db/migrate which will reflect in the db/schema
+```
+
+* Scaffold
+```ruby = 
+1. Enter "rails generate scaffold Post title:string content:text" on docker container
+    # It generates the following: db/migrate/20241017072138_create_posts.rb, app/models/post.rb,  app/controllers/posts_controller.rb,
+    # app/views/posts/index.html.erb, app/views/posts/edit.html.erb, app/views/posts/show.html.erb, app/views/posts/new.html.erb, app/views/posts/_form.html.erb, app/views/posts/_post.html.erb
+    # app/helpers/posts_helper.rb,  app/views/posts/index.json.jbuilder, app/views/posts/show.json.jbuilder, app/views/posts/_post.json.jbuilder
+```
