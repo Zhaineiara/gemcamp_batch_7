@@ -74,3 +74,9 @@
 1. Post.where(title: 'my first post')
 2. Post.where(title: 'My sixth post')
 ```
+
+* Reading records from the database with orders (asc, desc)
+```ruby =
+1. Post.order(created_at: :asc)
+2. Post.order(created_at: :desc)
+```
