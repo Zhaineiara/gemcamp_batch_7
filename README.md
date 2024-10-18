@@ -186,3 +186,17 @@ end
 3. Post.create(title: 'new title', content: '' ).valid? #false
 4. Post.create(title: 'new title', content: 'new content' ).valid? #true
 ```
+
+* Render validation to new.html.erb
+```ruby =
+1. Turn the post local variable into instance variable 
+    # post to @post
+2. add the validation logics to display the error.
+    # <% if @post.errors.any? %>
+    #   <ul>
+    #     <% @post.errors.each  do | error | %>
+    #       <li> <%= error.full_message %></li>
+    #     <% end %>
+    #   </ul>
+    # <% end %>
+```
