@@ -178,3 +178,11 @@
 2. Add the permit method into post
 end
 ```
+
+* Create a validation for title and content in post
+```ruby =
+1. Post.create(title: '', content: '' ).valid? #false
+2. Post.create(title: '', content: 'new content' ).valid? #false
+3. Post.create(title: 'new title', content: '' ).valid? #false
+4. Post.create(title: 'new title', content: 'new content' ).valid? #true
+```
