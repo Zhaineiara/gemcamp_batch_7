@@ -200,3 +200,17 @@ end
     #   </ul>
     # <% end %>
 ```
+
+* Added flash messages
+```ruby = 
+1. Add the logic in application.html.erb
+    # <% if flash[:notice] %>
+    #   <p class="notice"><%= notice %></p>
+    # <% end %>
+    # <% if flash[:alert] %>
+    #   <p class="alert"><%= alert %></p>
+    # <% end %>
+2. Modify the create instance method in post controller
+    # flash[:notice] = 'Post created successfully'
+    # flash.now[:alert] = 'Post create failed'
+```
