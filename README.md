@@ -144,3 +144,17 @@
     # 1. class="table-responsive" - to make the table adjustable in accordance to screen size
     # 2. class="w-100" - width sizing
 ```
+
+* Create a record for post
+```ruby =
+1. Setting up a new instance of a post model 
+    # @post = Post.new
+    # handles displaying the form for creating a new post object.
+    # This is server-side code that runs in the controller to prepare a new Post object for the view.
+2. Setting up form for new post
+    # form_with model: @post 
+    # This is view code that generates a form tied to the @post object for the user to fill out.
+3. How new instance method and form work?
+    # When a user accesses the New Post page (triggering the new action), the controller creates a new Post instance and assigns it to @post.
+    # The view then uses @post to generate a form where the user can input the title and content for the new post.
+```
