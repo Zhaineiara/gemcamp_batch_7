@@ -132,3 +132,15 @@
     # Not that required
     # 1. scope="col" - improves the semantics of the table and enhances accessibility by clearly identifying column headers.
 ```
+
+* Modified table into responsive
+```ruby =
+1. Put the table into a div with a class (class="table-responsive) then add the margin (m-5)
+2. Remove the my-5 (top and bottom margin)
+3. Remove the style="width: 1200px"
+4. Add w-100
+
+. Additional bootstrap classes to remember:
+    # 1. class="table-responsive" - to make the table adjustable in accordance to screen size
+    # 2. class="w-100" - width sizing
+```
