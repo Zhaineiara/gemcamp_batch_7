@@ -168,3 +168,12 @@
     # This will generate data in terminal when you submit into the form
     # Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"sdsds", "content"=>"dsdsd"}, "commit"=>"Create Post"}
 ```
+
+* Create a save for post that will save the instance
+```ruby =
+1. Enter this into create instance method.     
+    # post = Post.new(params[:post])
+    #   if post.save
+    # redirect_to posts_path
+end
+```
