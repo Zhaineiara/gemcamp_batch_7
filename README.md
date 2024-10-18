@@ -175,5 +175,6 @@
     # post = Post.new(params[:post])
     #   if post.save
     # redirect_to posts_path
+2. Add the permit method into post
 end
 ```

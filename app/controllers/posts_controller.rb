@@ -8,7 +8,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    post = Post.new(params[:post])
+    post = Post.new(params[:post].permit(:title, :content))
     if post.save
       redirect_to posts_path
     end
