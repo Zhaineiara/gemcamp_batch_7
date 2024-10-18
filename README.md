@@ -158,3 +158,13 @@
     # When a user accesses the New Post page (triggering the new action), the controller creates a new Post instance and assigns it to @post.
     # The view then uses @post to generate a form where the user can input the title and content for the new post.
 ```
+
+* Create a debugger
+```ruby =
+1. Put debugger in post controller (we use debug gem here)
+    # def create
+    #   debugger
+    # end
+    # This will generate data in terminal when you submit into the form
+    # Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"sdsds", "content"=>"dsdsd"}, "commit"=>"Create Post"}
+```
