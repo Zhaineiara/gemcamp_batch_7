@@ -248,3 +248,12 @@ end
     # The update action processes the form submission, validates the data, and either updates the post or displays error messages if validation fails.
     # The view (edit.html.erb) displays the form, handles error messages, and submits the updated data to the server.
 ```
+
+* Added delete for post
+```ruby =
+1. Setting up an destroy instance method to a post contoller
+    # @post = Post.find(params[:id])
+    # @post.destroy
+    # flash[:notice] = 'Post destroyed successfully'
+    # redirect_to posts_path
+```
