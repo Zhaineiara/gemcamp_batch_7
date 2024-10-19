@@ -257,3 +257,12 @@ end
     # flash[:notice] = 'Post destroyed successfully'
     # redirect_to posts_path
 ```
+
+* Added button and link for create, read, edit and delete
+```ruby =
+1. Setting up the links in index.html.erb
+    # <%= link_to 'New', new_post_path %>
+    # <%= link_to 'Show', post_path(post) %>
+    # <%= link_to 'Edit', edit_post_path(post) %>
+    # <%= button_to 'Delete', post_path(post), method: :delete %>
+```
