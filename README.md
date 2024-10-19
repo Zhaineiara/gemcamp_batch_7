@@ -229,3 +229,22 @@ end
     # Controller (show action): Fetches the post from the database using the id passed in the URL and assigns it to @post.
     # View (show.html.erb): Displays the post's attributes (like id, title, content) using the @post variable set by the controller.
 ```
+
+* Added edit for post
+```ruby =
+1. Setting up an edit instance method to a post contoller
+    # @post = Post.find(params[:id])
+2. Setting up a show file to render record in show.html.erb
+    # <h1>Edit post id: <%= @post.id %></h1>
+    # <%= form_with model: @post do |form| %>
+    #   <%= form.label :title %>
+    #   <%= form.text_field :title %>
+    #   <%= form.label :content %>
+    #   <%= form.text_field :content %>
+    #   <%= form.submit %>
+    # <% end %>
+3. How edit and update instance method and form work?
+    # The edit action retrieves the post and renders the form with the post’s current data.
+    # The update action processes the form submission, validates the data, and either updates the post or displays error messages if validation fails.
+    # The view (edit.html.erb) displays the form, handles error messages, and submits the updated data to the server.
+```
