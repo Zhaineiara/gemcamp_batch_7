@@ -214,3 +214,18 @@ end
     # flash[:notice] = 'Post created successfully'
     # flash.now[:alert] = 'Post create failed'
 ```
+
+* Added show
+```ruby =
+1. Setting up a show instance method to a post contoller
+    # @post = Post.find(params[:id])
+2. Setting up a show file to render record in show.html.erb
+    # <h1>show post id: <%= @post.id %></h1>
+    # <ul>
+    #   <li><%= @post.title %></li>
+    #   <li><%= @post.content %></li>
+    # </ul>
+3. How show instance method and rendering work?
+    # Controller (show action): Fetches the post from the database using the id passed in the URL and assigns it to @post.
+    # View (show.html.erb): Displays the post's attributes (like id, title, content) using the @post variable set by the controller.
+```
