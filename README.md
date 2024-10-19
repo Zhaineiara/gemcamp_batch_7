@@ -266,3 +266,9 @@ end
     # <%= link_to 'Edit', edit_post_path(post) %>
     # <%= button_to 'Delete', post_path(post), method: :delete %>
 ```
+
+* Added back to post
+```ruby =
+1. Setting up links to edit, new and show files
+    # <%= link_to 'Back to Post', post_path %>
+```
