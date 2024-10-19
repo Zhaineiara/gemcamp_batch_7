@@ -272,3 +272,9 @@ end
 1. Setting up links to edit, new and show files
     # <%= link_to 'Back to Post', post_path %>
 ```
+
+* Changes id to index as a counter
+```ruby =
+1. Change the each loop to each_with_index
+    # <% @posts.each_with_index do |post, index| %>
+```
