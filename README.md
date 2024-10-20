@@ -278,3 +278,20 @@ end
 1. Change the each loop to each_with_index
     # <% @posts.each_with_index do |post, index| %>
 ```
+
+* Refactoring (before_action :set_post and post_params)
+```ruby =
+1. Setting up set_post private method in finding id for show, edit, update, and destroy
+    # def set_post
+    #   @post = Post.find(params[:id])
+    # end
+2. Setting up before action where we use the set_post private instance method
+    # before_action :set_post, only: [:show, :edit, :update, :destroy]
+3. Setting up post_params
+    # def post_params
+    #   params.require(:post).permit(:title, :content)
+    # end
+    # This method is connected to create and update instance method.
+    # This is responsible for handling strong parameters in Rails.
+    # It ensures that only the permitted fields (title and content) are allowed to be submitted when creating or updating a post.
+```
