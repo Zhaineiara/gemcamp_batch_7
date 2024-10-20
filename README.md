@@ -320,3 +320,14 @@ end
 2. Enter "rails db:migrate"
     # check the schema
 ```
+
+* Query to connect comment to a post
+```ruby = 
+1. post = Post.first
+2. post.comments
+3. comment = Comment.new(content: 'comment of post 1', post_id: post.id)
+4. comment.save
+5. post.comments
+6. post.reload
+7. post.comments
+```
