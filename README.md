@@ -295,3 +295,14 @@ end
     # This is responsible for handling strong parameters in Rails.
     # It ensures that only the permitted fields (title and content) are allowed to be submitted when creating or updating a post.
 ```
+
+* Added partial form for new and edit post
+```ruby =
+1. Setting up the partial file then add the form code
+2. Render the partial file into new and edit files
+    # <%= render partial: 'form', locals: { post: @post } %>
+3. How partial form works?
+    # The detection of whether the form is for a new or edit action is automatically handled by the form_with helper in Rails, based on the state of the model object (post in this case).
+    # The @post instance variable in the new or edit view isn't automatically available in the partial. So you use locals to explicitly pass the variable to the partial as a local variable (post).
+    # Inside the partial _form.html.erb, you will refer to post (not @post) because it’s now a local variable.
+```
