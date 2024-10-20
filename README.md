@@ -366,3 +366,11 @@ end
 4. Setting up comment_params private instance method for comment 
     # params.require(:comment).permit(:content)
 ```
+
+* Create form for add comment
+```ruby =
+1. Setting up form for add comment
+2. Setting up validation for comments
+3. Setting up link_to button for add comment
+4. Exclude show in comment resources
+```
