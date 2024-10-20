@@ -331,3 +331,21 @@ end
 6. post.reload
 7. post.comments
 ```
+
+* Create a comments controller
+```ruby =
+1. Enter "rails generate controller CommentsController --skip-routes --no-test-framework"
+2. Added comment routes into post route
+    # resources :posts do
+    #   resources :comments
+    # end
+3. Create logic into comment controller
+    # before_action :set_post
+    # def index
+    #   @comments = @post.comments
+    # end
+    # private
+    # def set_post
+    #   @post = Post.find params[:post_id]
+    # end
+```
