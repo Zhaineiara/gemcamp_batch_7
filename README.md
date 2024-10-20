@@ -312,3 +312,11 @@ end
 1. Types of association: 
     # belongs_to, has_one, has_many, has_many :through, has_one :through and has_and_belongs_to_many
 ```
+
+* Create comment model
+```ruby =
+1. Enter " rails generate model Comment content:string post:references"
+    # check the files
+2. Enter "rails db:migrate"
+    # check the schema
+```
