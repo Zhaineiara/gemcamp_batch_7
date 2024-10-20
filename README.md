@@ -306,3 +306,9 @@ end
     # The @post instance variable in the new or edit view isn't automatically available in the partial. So you use locals to explicitly pass the variable to the partial as a local variable (post).
     # Inside the partial _form.html.erb, you will refer to post (not @post) because it’s now a local variable.
 ```
+
+* Active record association
+```ruby =
+1. Types of association: 
+    # belongs_to, has_one, has_many, has_many :through, has_one :through and has_and_belongs_to_many
+```
