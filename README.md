@@ -349,3 +349,20 @@ end
     #   @post = Post.find params[:post_id]
     # end
 ```
+
+* Create new comment using build method
+```ruby =
+1. Setting up logic for new comment in comment controller
+2. Setting up new instance method for comment
+    # @comment = @post.comments.build
+3. Setting up create instance method for comment
+    # @comment = @post.comments.build(comment_params)
+    # if @comment.save
+    #   flash[:notice] = 'Comment created successfully'
+    #   redirect_to post_comments_path(@post)
+    # else
+    #   render :new
+    # end
+4. Setting up comment_params private instance method for comment 
+    # params.require(:comment).permit(:content)
+```
