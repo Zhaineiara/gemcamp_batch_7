@@ -415,3 +415,12 @@ end
 5. Add category id to post_params
 6. Added category to post partial form
 ```
+
+* Soft kill using sandbox for testing (dependent)
+```ruby =
+1. has_many :post_category_ships, dependent: :destroy
+2. has_many :post_category_ships, dependent: :delete_all
+3. has_many :post_category_ships, dependent: :nullify
+4. has_many :post_category_ships, dependent: :restrict_with_error
+5. has_many :post_category_ships, dependent: :restrict_with_exception
+```
