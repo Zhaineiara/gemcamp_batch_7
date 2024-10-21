@@ -374,3 +374,12 @@ end
 3. Setting up link_to button for add comment
 4. Exclude show in comment resources
 ```
+
+* Create edit for comments
+```ruby = 
+1. Setting up logic for edit and update instance method
+2. Setting up set_comment private instance method
+3. Setting up before_action with set_comment for edit and update
+4. Create a partial form for new and edit for comment
+4. Render comment's partial form in new.html.erb and edit.html.erb
+```
