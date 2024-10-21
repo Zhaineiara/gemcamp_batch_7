@@ -399,3 +399,8 @@ end
 2. Add associations in Post model
 3. Add associations in PostCategoryShip model
 ```
+
+* Create category controller
+```ruby =
+1. Enter "rails g controller categories index new edit --skip-routes"
+```
