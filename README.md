@@ -383,3 +383,19 @@ end
 4. Create a partial form for new and edit for comment
 4. Render comment's partial form in new.html.erb and edit.html.erb
 ```
+
+* Categories association (many-to-many)
+```ruby =
+1. Enter "rails g model Category"
+    # It will create, db and model
+2. Enter "rails g model PostCategoryShip" to joint the post and category
+3. Add references to CreatePostCategoryShips
+4. Enter "rails db:migrate"
+```
+
+* Post and Category validations and association
+```ruby = 
+1. Add validations and associations in Category model
+2. Add associations in Post model
+3. Add associations in PostCategoryShip model
+```
