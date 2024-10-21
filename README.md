@@ -412,4 +412,6 @@ end
 2. Setting up the CRUD logics for categories
 3. Setting up the form for categories for new and edit
 4. Render the categories in index.html.erb
+5. Add category id to post_params
+6. Added category to post partial form
 ```
