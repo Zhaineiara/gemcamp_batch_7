@@ -404,3 +404,12 @@ end
 ```ruby =
 1. Enter "rails g controller categories index new edit --skip-routes"
 ```
+
+* CRUD for category
+```ruby =
+1. Add routes for categories
+    # resources :categories, except: :show
+2. Setting up the CRUD logics for categories
+3. Setting up the form for categories for new and edit
+4. Render the categories in index.html.erb
+```

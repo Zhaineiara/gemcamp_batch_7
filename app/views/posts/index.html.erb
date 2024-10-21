@@ -6,6 +6,7 @@
       <th scope="col">#</th>
       <th scope="col">Title</th>
       <th scope="col">Content</th>
+      <th scope="col">Category</th>
       <th scope="col">Action</th>
     </tr>
     </thead>
@@ -16,6 +17,8 @@
         <td><%= index+1 %></td>
         <td><%= post.title %></td>
         <td><%= post.content %></td>
+        <td><%= post.categories.pluck(:name).join(',') %></td>
+
         <td>
           <%= link_to 'Show', post_path(post) %>
           <%= link_to 'Edit', edit_post_path(post) %>
