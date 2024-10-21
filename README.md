@@ -424,3 +424,16 @@ end
 4. has_many :post_category_ships, dependent: :restrict_with_error
 5. has_many :post_category_ships, dependent: :restrict_with_exception
 ```
+
+* Create soft kill to post
+```ruby =
+1. Enter "rails g migration add_deleted_at_to_posts deleted_at:datetime"
+2. Enter "rails db:migrate"
+3. Add the following to post model:
+    # default_scope { where(deleted_at: nil) }
+    # def destroy
+    #   update(deleted_at: Time.now)
+    # end
+4. To access deleted record:
+    # Post.unscoped.all or Post.unscoped.where.not(deleted_at: nil)
+```
